@@ -26,6 +26,9 @@
         ],
         "brace-style": ["warn", "allman"],
         "eol-last": "off",
-        "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }]
+        "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
+        "space-before-function-paren": ["off", "as-needed"],
+        "arrow-body-style": "off",
+        "arrow-parens": ["warn", "always"]
     }
 }

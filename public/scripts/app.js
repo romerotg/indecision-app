@@ -1,12 +1,13 @@
 'use strict';
 
-console.log('App.js is running!');
+console.log('App.js is running!!!');
 
 var app = {
     title: 'Indecision App',
     subtitle: 'Put your life in the hands of a computer',
     options: ['One', 'Two']
 };
+
 // JSX - JavaScript XML
 var template = React.createElement(
     'div',
@@ -54,6 +55,8 @@ function getLocation(location) {
         'Location: ',
         location
     );
+
+    return undefined;
 }
 var template2 = React.createElement(
     'div',

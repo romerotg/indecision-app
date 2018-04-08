@@ -1,10 +1,12 @@
-console.log('App.js is running!');
+
+console.log('App.js is running!!!');
 
 const app = {
     title: 'Indecision App',
     subtitle: 'Put your life in the hands of a computer',
-    options: ['One', 'Two']
+    options: ['One', 'Two'],
 };
+
 // JSX - JavaScript XML
 const template =
 (
@@ -23,12 +25,14 @@ const user =
 {
     name: 'Romero Gonçalves',
     age: 28,
-    location: 'Recife'
+    location: 'Recife',
 };
 function getLocation(location)
 {
     if (location)
         return <p>Location: {location}</p>;
+
+    return undefined;
 }
 const template2 = (
     <div>

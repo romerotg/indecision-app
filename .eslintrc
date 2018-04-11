@@ -29,6 +29,9 @@
         "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
         "space-before-function-paren": ["off", "as-needed"],
         "arrow-body-style": "off",
-        "arrow-parens": ["warn", "always"]
+        "arrow-parens": ["warn", "always"],
+        "no-plusplus": "off",
+        "no-use-before-define": ["error", { "functions": false, "classes": true, "variables": false }],
+        "prefer-destructuring": "off"
     }
 }

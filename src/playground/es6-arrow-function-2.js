@@ -2,9 +2,9 @@
 
 const add = (a, b) =>
 {
-    //console.log(arguments);
+    // console.log(arguments);
     return a + b;
-}
+};
 console.log(add(55, 1, 1000));
 
 // this keyworks - no longer bound
@@ -20,20 +20,20 @@ const user =
         // {
         //     console.log(this.name + ' has lived in ' + city);
         // });
-    }
-}
+    },
+};
 console.log(user.printPlacesLived());
 
 // challenge area
 
-const multiplier = 
+const multiplier =
 {
     numbers: [1, 2, 3, 4, 5],
     multiplyBy: 5,
     multiply()
     {
         return this.numbers.map((number) => number * this.multiplyBy);
-    }
-}
+    },
+};
 
 console.log(multiplier.multiply());

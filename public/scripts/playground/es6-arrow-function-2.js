@@ -3,7 +3,7 @@
 // arguments object - no longe bound with arrow functions
 
 var add = function add(a, b) {
-    //console.log(arguments);
+    // console.log(arguments);
     return a + b;
 };
 console.log(add(55, 1, 1000));

@@ -1,6 +1,6 @@
 'use strict';
 
-console.log('App.js is running!!!');
+console.log('App.js is running!');
 
 var app = {
     title: 'Indecision App',
@@ -34,7 +34,6 @@ var onMakeDecision = function onMakeDecision() {
 var appRoot = document.getElementById('app');
 
 var render = function render() {
-    // JSX - JavaScript XML
     var template = React.createElement(
         'div',
         null,
@@ -51,7 +50,7 @@ var render = function render() {
         React.createElement(
             'p',
             null,
-            app.options && app.options.length > 0 ? 'Here are your options' : 'No options'
+            app.options.length > 0 ? 'Here are your options' : 'No options'
         ),
         React.createElement(
             'button',

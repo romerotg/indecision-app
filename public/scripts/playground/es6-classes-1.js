@@ -58,7 +58,9 @@ var Student = function (_Person) {
         value: function getDescription() {
             var description = _get(Student.prototype.__proto__ || Object.getPrototypeOf(Student.prototype), 'getDescription', this).call(this);
 
-            if (this.hasMajor()) description += ' Their major is ' + this.major;
+            if (this.hasMajor()) {
+                description += ' Their major is ' + this.major + '.';
+            }
 
             return description;
         }
@@ -67,34 +69,36 @@ var Student = function (_Person) {
     return Student;
 }(Person);
 
-var Traveller = function (_Person2) {
-    _inherits(Traveller, _Person2);
+var Traveler = function (_Person2) {
+    _inherits(Traveler, _Person2);
 
-    function Traveller(name, age, homeLocation) {
-        _classCallCheck(this, Traveller);
+    function Traveler(name, age, homeLocation) {
+        _classCallCheck(this, Traveler);
 
-        var _this2 = _possibleConstructorReturn(this, (Traveller.__proto__ || Object.getPrototypeOf(Traveller)).call(this, name, age));
+        var _this2 = _possibleConstructorReturn(this, (Traveler.__proto__ || Object.getPrototypeOf(Traveler)).call(this, name, age));
 
         _this2.homeLocation = homeLocation;
         return _this2;
     }
 
-    _createClass(Traveller, [{
+    _createClass(Traveler, [{
         key: 'getGreeting',
         value: function getGreeting() {
-            var greeting = _get(Traveller.prototype.__proto__ || Object.getPrototypeOf(Traveller.prototype), 'getGreeting', this).call(this);
+            var greeting = _get(Traveler.prototype.__proto__ || Object.getPrototypeOf(Traveler.prototype), 'getGreeting', this).call(this);
 
-            if (this.homeLocation) greeting += ' I\'m visiting from ' + this.homeLocation + '.';
+            if (this.homeLocation) {
+                greeting += ' I am visiting from ' + this.homeLocation + '.';
+            }
 
             return greeting;
         }
     }]);
 
-    return Traveller;
+    return Traveler;
 }(Person);
 
-var me = new Traveller('Romero Gonçalves', 28, 'Recife');
+var me = new Traveler('Andrew Mead', 26, 'Philadelphia');
 console.log(me.getGreeting());
 
-var other = new Traveller();
+var other = new Traveler(undefined, undefined, 'Nowhere');
 console.log(other.getGreeting());

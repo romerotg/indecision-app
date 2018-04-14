@@ -17,7 +17,9 @@ var VisibilityToggle = function (_React$Component) {
         var _this = _possibleConstructorReturn(this, (VisibilityToggle.__proto__ || Object.getPrototypeOf(VisibilityToggle)).call(this, props));
 
         _this.handleToggleVisibility = _this.handleToggleVisibility.bind(_this);
-        _this.state = { visibility: false };
+        _this.state = {
+            visibility: false
+        };
         return _this;
     }
 
@@ -47,9 +49,13 @@ var VisibilityToggle = function (_React$Component) {
                     this.state.visibility ? 'Hide details' : 'Show details'
                 ),
                 this.state.visibility && React.createElement(
-                    'p',
+                    'div',
                     null,
-                    'Hidden details'
+                    React.createElement(
+                        'p',
+                        null,
+                        'Hey. These are some details you can now see!'
+                    )
                 )
             );
         }

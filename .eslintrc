@@ -38,6 +38,7 @@
         "max-len": "off",
         "react/prefer-stateless-function": "warn",
         "react/no-multi-comp": "warn",
-        "class-methods-use-this": "off"
+        "class-methods-use-this": "off",
+        "react/no-did-mount-set-state": "warn"
     }
 }

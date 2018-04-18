@@ -15,7 +15,7 @@ const user = {
     printPlacesLived()
     {
         return this.cities.map((city) => this.name + ' has lived in ' + city);
-    }
+    },
 };
 console.log(user.printPlacesLived());
 
@@ -27,7 +27,7 @@ const multiplier = {
     multiply()
     {
         return this.numbers.map((number) => number * this.multiplyBy);
-    }
+    },
 };
 
 console.log(multiplier.multiply());

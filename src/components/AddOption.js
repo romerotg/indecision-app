@@ -2,17 +2,12 @@ import React from 'react';
 
 export default class AddOption extends React.Component
 {
-    constructor(props)
+    state =
     {
-        super(props);
-        this.handleAddOption = this.handleAddOption.bind(this);
-        this.state =
-            {
-                error: undefined,
-            };
-    }
+        error: undefined,
+    };
 
-    handleAddOption(e)
+    handleAddOption = (e) =>
     {
         e.preventDefault();
 
@@ -23,7 +18,7 @@ export default class AddOption extends React.Component
 
         if (!error)
             e.target.elements.option.value = '';
-    }
+    };
 
     render()
     {

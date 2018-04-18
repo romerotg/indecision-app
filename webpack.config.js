@@ -16,10 +16,15 @@ module.exports =
                 presets: [
                     'env',
                     'react',
-                ]
-            }
-        }]
-    }
+                ],
+                plugins: [
+                    'transform-class-properties',
+                ],
+            },
+        }],
+    },
+    devtool: 'cheap-module-eval-source-map',
+    devServer: {
+        contentBase: path.join(__dirname, 'public'),
+    },
 };
-
-// loader

@@ -8,7 +8,8 @@ module.exports =
         filename: 'bundle.js',
     },
     module: {
-        rules: [{
+        rules:
+        [{
             test: /\.js$/,
             exclude: /node_modules/,
             loader: 'babel-loader',
@@ -21,6 +22,14 @@ module.exports =
                     'transform-class-properties',
                 ],
             },
+        },
+        {
+            test: /\.scss$/,
+            use: [
+                'style-loader',
+                'css-loader',
+                'sass-loader',
+            ],
         }],
     },
     devtool: 'cheap-module-eval-source-map',

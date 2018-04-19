@@ -6,5 +6,9 @@ yarn add webpack-dev-server@2.5.1
 yarn add live-server babel-cli@6.24.1
 yarn add babel-core@6.25.0 babel-loader@7.1.1
 yarn add babel-preset-react@6.24.1 babel-preset-env@1.5.2
+yarn add react-modal
+yarn add babel-plugin-transform-class-properties@6.24.1
+yarn add style-loader css-loader
+yarn add sass-loader node-sass
 
 coisas de eslint
